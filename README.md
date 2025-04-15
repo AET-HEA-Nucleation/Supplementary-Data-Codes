@@ -2,7 +2,7 @@
 
 **Crystal nucleation and growth in high-entropy alloys revealed by atomic electron tomography**
 
-Yakun Yuan<sup>1,2</sup>, Saman Moniri<sup>1*</sup>, Yao Yang<sup>1*</sup>, Jihan Zhou<sup>1*</sup>, Andrew Yuan<sup>1*</sup>, Dennis S. Kim<sup>1*</sup>, Yongsoo Yang<sup>1*</sup>, Chenyang Li<sup>3</sup>, Wei Chen<sup>3</sup>, Peter Ercius<sup>4</sup>, Jianwei Miao<sup>1†</sup>*
+Yakun Yuan<sup>1,2</sup>, Saman Moniri<sup>1</sup>, Yao Yang<sup>1</sup>, Jihan Zhou<sup>1</sup>, Andrew Yuan<sup>1</sup>, Dennis S. Kim<sup>1</sup>, Yongsoo Yang<sup>1</sup>, Chenyang Li<sup>3</sup>, Wei Chen<sup>3</sup>, Peter Ercius<sup>4</sup>, Jianwei Miao<sup>1†</sup>
 
 *<sup>1</sup>Department of Physics and Astronomy and California NanoSystems Institute, University of California, Los Angeles, CA 90095, USA.*    
 *<sup>2</sup>Future Material Innovation Center, School of Materials Science and Engineering and Zhangjiang Institute for Advanced Study, Shanghai Jiao Tong University, Shanghai 200240, China.*     
