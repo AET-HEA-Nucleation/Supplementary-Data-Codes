@@ -46,7 +46,7 @@ This package has been tested with `Matlab` R2023b. All the codes have to run in 
 
 Folder: [1_Measured_data](./1_Measured_data)
 
-This folder contains experimental images after denoising and alignment as well as their corresponding tilt angles for the 25 high entropy nanoparticles (named HEA1 - HEA25).
+This folder contains experimental images after denoising and alignment as well as their corresponding tilt angles for the 25 high entropy alloy nanoparticles (named HEA1 - HEA25).
 
 ### 2. The REal Space Iterative REconstruction (RESIRE) Package
 
@@ -87,5 +87,5 @@ Run the codes `Main_2_BOO_evolution_in_nuclei_HEA_nanoparticle.m` to compute and
 
 Run the codes `Main_3_CSRO_BOO_HEA_nanoparticle.m` to quantify the chemical short range order parameters for the HEA nanoparticles and their correlation with crystallinity.
 
-Run the codes `Main_4_nuclei_coalescence_HEA_nanoparticle.m` to analyze the correlation between misorientation and distance of nuclei pairs in the HEA nanoparticles, and identify different types of twins formed during nuclei coalescence.# Supplementary-Data-Codes
+Run the codes `Main_4_nuclei_coalescence_HEA_nanoparticle.m` to analyze the correlation between misorientation and distance of nuclei pairs in the HEA nanoparticles, and identify different types of twins formed during nuclei coalescence.
  
