@@ -314,6 +314,19 @@ ax = gca;ax.BoxStyle = 'full';ax.LineWidth=1;
 %% plot Voronoi of HEA2，6，10 nanoparticles
 pltlt = [2 6 10]; % select datasets to plot
 
+% plot 3D aotmic model of selected particles
+for sampleID = pltlt
+path='../6_Final_coordinates/';
+% read in files: finalized atomic coordinates in Angstrom
+data = importdata([path, 'Final_atomic_model_HEA_' num2str(sampleID) '_nanoparticle.mat']);
+model = data.model;
+atom = data.atoms;
+figure(10+sampleID)
+scatter3(model(1,atom==1),model(2,atom==1),model(3,atom==1),'filled','MarkerEdgeColor','k');hold on;
+scatter3(model(1,atom==2),model(2,atom==2),model(3,atom==2),'filled','MarkerEdgeColor','k');
+scatter3(model(1,atom==3),model(2,atom==3),model(3,atom==3),'filled','MarkerEdgeColor','k');
+hold off;axis image;title(['HEA ' num2str(sampleID)]);xlabel('x');ylabel('y');zlabel('z')
+end
 data=[];ind=[];NNico=[];N=[];nfold = [];nfoldplt = [];
 for i=1:length(pltlt)
     data{i}=importdata(['./Input/Voronoi_HEA_' num2str(pltlt(i)) '_nanoparticle.mat']);

@@ -210,7 +210,7 @@ Nii
 data=importdata(['./Input/Nuclei_atoms_HEA_' num2str(Nii) '_nanoparticle.mat']);
 indGrain=data.indGrain_ori; 
 
-data=importdata(['./Output/BOO_HEA_' num2str(Nii) '_nanoparticle.mat']);
+data=importdata(['./Input/BOO_HEA_' num2str(Nii) '_nanoparticle.mat']);
 model = data.model;
 order = data.order;
 order(order>1) = 2-order(order>1);
@@ -327,7 +327,7 @@ end
 % plot BOO evolution and fit with an exp function
 abc=[];
 figure(3);clf
-scatter(xx,order_dis_mean,'o','filled');hold on
+scatter(xx,order_dis_mean,'o','filled');xlim([0 10.9]);hold on
 for n = 1:size(size_arr,1)
 ind = order_dis_mean(n,:)>=0.51;
 x0 = xx(ind);y0=order_dis_mean(n,ind);
