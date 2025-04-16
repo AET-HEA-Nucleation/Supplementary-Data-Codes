@@ -23,7 +23,7 @@ RESIRE.filename_Projections = [Path 'projections.mat'];
 RESIRE.filename_Angles = [Path 'angles.mat'];
 RESIRE.filename_Support = ''; 
 RESIRE.filename_InitialModel = '';
-RESIRE.filename_Results = ['./Output/ReconObj_' Dataset '.mat'];
+RESIRE.filename_Results = ['./ReconObj_' Dataset '.mat'];
 
 RESIRE.numIterations = 200;
 RESIRE.extenedobject = false;
@@ -47,5 +47,5 @@ RESIRE = readFiles(RESIRE);
 RESIRE = CheckPrepareData(RESIRE);
 RESIRE = reconstruct_control(RESIRE);
 Reconstruction = RESIRE.reconstruction;
-save(['./Output/' Dataset '_particle_volume.mat'],'Reconstruction')
+save(['./' Dataset '_particle_volume.mat'],'Reconstruction')
 SaveResults(RESIRE);
