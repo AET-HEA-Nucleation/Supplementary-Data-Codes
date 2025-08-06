@@ -6,7 +6,7 @@ clc
 addpath('./src/')
 
 % Select the index of HEA dataset to proceed
-ii= 4;
+ii= 3;
 
 % save filename prefix
 savename=['HEA_' num2str(ii) '_'];
@@ -22,7 +22,7 @@ end
 projections=importdata(['../1_Measured_data/HEA_' num2str(ii) '/projections.mat']);
 angles=importdata(['../1_Measured_data/HEA_' num2str(ii) '/angles.mat']);
 cen=round((size(projections,1)+1)/2);
-data = importdata(['./Input/Atom_local_classified_HEA_' num2str(ii) '_nanoparticle.mat']);
+data = importdata(['./Input/Atom_local_classified_HEA_' num2str(ii) '_nanoparticle_manual_checked.mat']);
 atoms = data.local_atomtype;
 model=(data.curr_model-repmat(cen*ones(3,1),[1,length(atoms)]))*Res;
 
@@ -106,8 +106,9 @@ para0=x(:,:,ind);
 [y_pred,~] = Cal_Bproj_2type(para0, xdata, projections);
 save(['./Output/' savename 'HB_scan_initial.mat'],'y_pred','para0','errRscan','err_arr','err_arr2')
 
-% repeating the main refinement procedure few times
-for jjjj=1:2
+% repeating the main refinement procedure few times depending on the error
+% and convergence of the data
+for jjjj = 1
 x0 = para0;
 x0(1,:)=x0(1,:)/x0(1,1);
 

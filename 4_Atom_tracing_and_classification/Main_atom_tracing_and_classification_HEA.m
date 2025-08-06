@@ -16,7 +16,7 @@
 addpath('./src/');
 
 % Select the index of HEA dataset to proceed
-ii = 4;
+ii = 3;
 
 % load reconstructed 3D volume
 Recon_filename=['../3_Final_reconstruction_volume/HEA_' num2str(ii) '_particle_volume.mat'];
@@ -206,7 +206,8 @@ atom_pos(:,bT) = [];
 % generate tight support to mask out the volume outside the sample boundary from the
 % reconstruction
 tight_support = My_obtain_tight_support_ver1(rec);
-
+se =strel3d(4);
+tight_support  = imdilate(tight_support ,se);  
 curr_model0      = atom_pos;
 
 % set parameters for the K-mean calculation
