@@ -63,13 +63,13 @@ This folder contains the 3D reconstructed volumes of the 25 HEA nanoparticles.
 
 Folder: [4_Atom_tracing_and_classification](./4_Atom_tracing_and_classification)
 
-Run the codes `Main_atom_tracing_and_classification_HEA.m` to trace the potential atomic positions from the reconstructed 3D volumes, separate non-atoms from the potential atoms using the K-mean clustering method, and perform local classification of elemental species into type 1-3. By carefully comparing the individual atomic positions in the potential atomic models with the 3D reconstructions, a small fraction of unidentified or misidentified atoms were manually corrected, producing the 3D atomic models of the 25 HEA nanoparticles.
+Run the codes `Main_atom_tracing_and_classification_HEA.m` to trace the potential atomic positions from the reconstructed 3D volumes, separate non-atoms from the potential atoms using the K-mean clustering method, and perform local classification of elemental species into type 1-3. By carefully comparing the individual atomic positions in the potential atomic models with the 3D reconstructions slice by slice, a small fraction (typically <1%) of unidentified or misidentified atoms were manually corrected, producing the 3D atomic models of the 25 HEA nanoparticles.
 
 ### 5. Atomic Position Refinement
 
 Folder: [5_Position_refinement](./5_Position_refinement)
 
-Run the codes `Main_position_refinement_HEA_nanoparticle.m` to refine the 3D atomic models of the 25 HEA nanoparticles.
+Run the codes `Main_position_refinement_HEA_nanoparticle.m` to refine the 3D atomic models of the 25 HEA nanoparticles. To ensure the accuracy of the structural and chemical order analysis on the atomic structures, surface atoms of each HEA nanoparticle were excluded prior to computing structural and chemical orders.
 
 ### 6. Experimental Atomic Model
 
