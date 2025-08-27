@@ -69,7 +69,7 @@ Run the codes `Main_atom_tracing_and_classification_HEA.m` to trace the potentia
 
 Folder: [5_Position_refinement](./5_Position_refinement)
 
-Run the codes `Main_position_refinement_HEA_nanoparticle.m` to refine the 3D atomic models of the 25 HEA nanoparticles. To ensure the accuracy of the structural and chemical order analysis on the atomic structures, surface atoms of each HEA nanoparticle were excluded prior to computing structural and chemical orders.
+Run the codes `Main_position_refinement_HEA_nanoparticle.m` to refine the 3D atomic models of the 25 HEA nanoparticles. To ensure the accuracy of the further analysis on the atomic structures, surface atoms of each HEA nanoparticle were excluded prior to computing structural and chemical orders.
 
 ### 6. Experimental Atomic Model
 
