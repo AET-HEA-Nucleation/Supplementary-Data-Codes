@@ -15,7 +15,7 @@ Yakun Yuan<sup>1,2</sup>, Saman Moniri<sup>1</sup>, Yao Yang<sup>1</sup>, Jihan 
 
 - [Overview](#overview)
 - [System Requirements](#system-requirements)
-- [Repositary Contents](#repositary-contents)
+- [Repository Contents](#repository-contents)
 
 # Overview
 
@@ -41,7 +41,7 @@ Mac OSX: We have not tested it on a Mac yet, but it should in principle work.
 
 This package has been tested with `Matlab` R2023b. All the codes have to run in their own folders. We recommend the use of `Matlab` version R2023b or higher to test the data and source codes.
 
-# Repositary Contents
+# Repository Contents
 
 ### 1. Experiment Data
 
