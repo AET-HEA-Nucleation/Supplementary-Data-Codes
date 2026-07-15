@@ -344,7 +344,7 @@ plot(xplot,yplot,'-','color',[1 1 1]*0.5);
 end
 hold off
 xlabel('Radial distance (A)');ylabel('BOO');
-xlim([0 10.9]);ylim([0.5 1]);legend('1-10','10-100','100-500','500-1000','>1000')
+xlim([0 10.9]);ylim([0.5 1]);legend('1-10','11-100','101-500','501-1000','>1000')
 set(gca,'fontsize', 14,'FontName', 'Arial','fontweight','bold');box on
 ax = gca;ax.BoxStyle = 'full';ax.LineWidth=1;
 
@@ -366,7 +366,7 @@ plot(lambda,DG,'-','linewidth',2);hold on
 end
 xlabel('R (\gamma/\Deltag)');ylabel('Energy (\gamma^3/\Deltag^2)');
 xlim([0 max(lambda)]);ylim([-1 1]*15)
-legend('1-10','10-100','100-500','500-1000','>1000')
+legend('1-10','11-100','101-500','501-1000','>1000')
 set(gca,'fontsize', 14,'FontName', 'Arial','fontweight','bold')
 ax = gca;ax.BoxStyle = 'full';ax.LineWidth=1;hold off
 end
