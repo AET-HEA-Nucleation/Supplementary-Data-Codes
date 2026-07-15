@@ -192,8 +192,8 @@ save(['./Output/Nuclei_atoms_HEA_' num2str(sampleID) '_nanoparticle.mat'], ...
     'indGrain','indGrain_ori','indGrain_combined','vector','FCCind','vectorfit','FCCindfit','bondfit','orifit')
 end
 
-%% analyze BOO evolution from nuclei cores to surfaces of different sizes
-xx=0:0.5:20; % distances from nuclei cores to be analyzed
+%% analyze BOO evolution from nuclei center to surfaces of different sizes
+xx=0:0.5:20; % distances from nuclei center to be analyzed
 ngauss=4;[vMat,~]=spheretri(100); % spatial interpolation parameters
 
 Nparticle = 25; % total number of HEA particles
