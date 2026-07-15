@@ -200,7 +200,7 @@ Nparticle = 25; % total number of HEA particles
 Nsize = cell(1,Nparticle);
 
 sizeMode = 1; % 1 - number of atoms; 2 - total BOO
-size_arr = [1 10; 10 100; 100 500; 500 1000; 1000 1e4];
+size_arr = [1 10; 11 100; 101 500; 501 1000; 1001 1e4];
 
 size_arr_dim = size(size_arr,1);
 order_dis_arr = cell(Nparticle,size_arr_dim);
@@ -312,7 +312,7 @@ xlim([0.49 1.01]);ylim([1 300]);set(gca,'Yscale','log');grid off;box on
 set(gca,'fontsize', 14,'FontName', 'Arial','fontweight','bold')
 ax = gca;ax.BoxStyle = 'full';ax.LineWidth=1;
 
-%% plot BOO evolution from core to surface of nuclei with different sizes and fit with an exp funtion
+%% plot BOO evolution from center to surface of nuclei with different sizes and fit with an exp funtion
 load('./Input/Nuclei_statistics_BOOvsSize_HEA_nanoparticle.mat')
 Nparticle = 25;
 % average BOO evolution curves of nuclei with similar sizes
@@ -343,7 +343,7 @@ abc(n,:) = [curve2.a curve2.b curve2.c];
 plot(xplot,yplot,'-','color',[1 1 1]*0.5);
 end
 hold off
-xlabel('Distance to nuclei core (A)');ylabel('BOO');
+xlabel('Radial distance (A)');ylabel('BOO');
 xlim([0 10.9]);ylim([0.5 1]);legend('1-10','10-100','100-500','500-1000','>1000')
 set(gca,'fontsize', 14,'FontName', 'Arial','fontweight','bold');box on
 ax = gca;ax.BoxStyle = 'full';ax.LineWidth=1;
